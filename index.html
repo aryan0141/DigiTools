@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="home.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 1200px)" href="phone.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <!-- Google Fonts CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <!-- Animate.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css"
+        integrity="sha256-Qj+zEEvubER4lO5l200c3UfufBOsKTgpsgJU0/t3CoU=" crossorigin="anonymous" />
+
+    <title>DigiTools</title>
+</head>
+
+<body>
+
+    <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+            <h1>DigiTools</h1>
+            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i> About Us</a></li>
+            <li><a href="#"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact Us</a></li>
+            <li><a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Tools</a></li>
+        </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+
+
+    <div id="navbar">
+        <div class="nav-items">
+            <div class="links">
+            <div class="logo">
+                <h3>DigiTools</h3>
+            </div>
+            
+                <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                <a href="#"><i class="fa fa-address-book" aria-hidden="true"></i> About Us</a>
+                <a href="#"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact Us</a>
+                <a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Tools</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="home">
+        <div class="home-center">
+            <h1>Welcome To DigiTools</h1>
+            <p>The main motive of this web app is to <b>boycott</b> Chinese softwares.</p>
+            <div class="india">
+                <h2 style="align-content: center; justify-content: center; margin: auto 0px;">This web app is truly <u><b>MADE IN INDIA</b></u></h2>
+                <img id="india_flag" src='images/Indian.png' alt="">
+            </div>
+            <p>Some common Chinese softwares that must be <b>boycotted</b>.</p>
+            <div class="chinese-items">
+                <img src='images/app-lock.png' alt="" title="App Lock">
+                <img src='images/beauty.png' alt="" title="Beauty Plus">
+                <img src='images/cam scanner.png' alt="" title="Cam Scanner">
+                <img src='images/helo.jpg' alt="" title="Helo App">
+                <img src='images/tik-tok.jpg' alt="" title="Tik Tok">
+                <img src='images/xender.png' alt="" title="Xender">
+                <img src='images/likee.png' alt="" title="Likee App">
+                <img src='images/vmate.png' alt="" title="VMate App">
+            </div>
+
+            <h3>This is the best way to beat China</h3>
+            
+        </div>
+    </div>
+
+    <div id="img-tools">
+        <h1 class="text-center">Image Processing Tools</h1>
+        <div class="grid">
+            <div class="card-white img-part-1">
+                <i class="fa-5x fa fa-arrows-alt" aria-hidden="true"></i>
+                <h2>Resize Image</h2>
+                <p>Resize your image to a specific height and width.</p>
+                <a class="button-white" href="img_resize">Click Here</a>
+            </div>
+            <div class="card-white img-part-1">
+                <i class="fa-5x fa fa-picture-o" aria-hidden="true"></i>
+                <h2>Image Extension</h2>
+                <p>Change your image extension from jpg to png or vice versa.</p>
+                <a class="button-white" href="img_ext">Click Here</a>
+            </div>
+
+            <div class="card-white img-part-2">
+                <i class="fa-5x fa fa-object-group" aria-hidden="true"></i>
+                <h2>Remove Background</h2>
+                <p>Remove the background of the image to get only the object.</p>
+                <a class="button-white " href="back_remove">Click Here</a>
+            </div>
+            <div class="card-white img-part-2">
+                <i class="fa-5x fa fa-paint-brush" aria-hidden="true"></i>
+                <h2>Change Color</h2>
+                <p>Change the color of your image to B&W, Grayscale or HSV.</p>
+                <a class="button-white" href="clr_change">Click Here</a>
+            </div>
+        </div>
+    </div>
+    <div id="cv-tools">
+        <h1 class="text-center">Computer Vision Tools</h1>
+        <div class="grid">
+            <div class="card-green cv-part-1">
+                <i class="fa-5x fa fa-picture-o" aria-hidden="true"></i>
+                <i class="fa-5x fa fa-arrow-right" aria-hidden="true"></i>
+                <i class="fa-5x fa fa-file-pdf-o" aria-hidden="true"></i>
+                <h2>Images To PDF</h2>
+                <p>Convert group of images to PDF document.</p>
+                <a class="button-green" href="img_to_pdf">Click Here</a>
+            </div>
+            <div class="card-green cv-part-1">
+                <i class="fa-5x fa fa-crop" aria-hidden="true"></i>
+                <h2>Crop PDF</h2>
+                <p>Crop your PDF document from specific pages.</p>
+                <a class="button-green" href="crop_pdf">Click Here</a>
+            </div>
+
+            <div class="card-green cv-part-2">
+                <i class="fa-5x fa fa-print" aria-hidden="true"></i>
+                <h2>Image Scanning</h2>
+                <p>Make a bird-eyed view and scanned doc of your uploaded image.</p>
+                <a class="button-green" href="img_scanning">Click Here</a>
+            </div>
+            <div class="card-green cv-part-2">
+                <i class="fa-5x fa fa-search" aria-hidden="true"></i>
+                <h2>DigiLens</h2>
+                <p>Detect 80 types of different objects in your image.</p>
+                <a class="button-green" href="DigiLens">Click Here</a>
+            </div>
+        </div>
+    </div>
+    <div id="nlp-tools">
+        <h1 class="text-center">Language Processing Tools</h1>
+        <div class="grid">
+            <div class="card-white nlp-part-1">
+                <i class="fa-5x fa fa-file-image-o" aria-hidden="true"></i>
+                <h2>Image Captioner</h2>
+                <p>Get the short story or captions based on your images.</p>
+                <a class="button-white" href="img_capt">Click Here</a>
+            </div>
+            <div class="card-white nlp-part-1">
+                <i class="fa-5x fa fa-file-text-o" aria-hidden="true"></i>
+                <h2>Sentiment Analysis</h2>
+                <p>To know that your text gives positive or negative or neutral message.</p>
+                <a class="button-white" href="sent_analysis">Click Here</a>
+            </div>
+
+            <div class="card-white nlp-part-2">
+                <i class="fa-5x fa fa-envelope" aria-hidden="true"></i>
+                <h2>Spam Message</h2>
+                <p>It tells you that your messsage is spam or not with probability.</p>
+                <a class="button-white" href="spam_mail">Click Here</a>
+            </div>
+            <div class="card-white nlp-part-2">
+                <i class="fa-5x fa fa-book" aria-hidden="true"></i>
+                <h2>Part Of Speech</h2>
+                <p>Get the parts of speech in a sentence like nouns, verbs, adjectives etc.</p>
+                <a class="button-white" href="part_of_speech">Click Here</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="about footer-part-1">
+                <h2>About Me-</h2>
+                <p>I'm Aryan Garg, a junior web developer and knows much about computer vision & deep learning.
+                    I currently pursuing my bachelor's degree from IIT. Feel free to ask any of your doubts in the
+                    comment
+                    section.
+                </p>
+                <p style="padding: 20px 0px 10px ;">Truly speaking, <b>DigiTools</b> is the best platform in which you
+                    can do some rare and difficult
+                    processing tasks very easily & absolutely free of cost. </p>
+            </div>
+            <div class="about footer-part-2">
+
+                <h2>Contact Us-</h2>
+                <div style="padding: 7px 0px;">
+                    <h3>DigiTools Community</h3>
+                    <p>Jaipur, Rajasthan</p>
+                </div>
+                <div style="padding: 7px 0px;">
+                    <h3>Phone</h3>
+                    <p>0141-88XXX16</p>
+                </div>
+                <a href="" style="color: white; padding: 15px 5px 5px 0px;"><i class="fa-2x fa fa-instagram"
+                        aria-hidden="true"></i></a>
+                <a href="" style="color: white; padding: 15px 5px;"><i class="fa-2x fa fa-github"
+                        aria-hidden="true"></i></a>
+                <a href="" style="color: white; padding: 15px 5px;"><i class="fa-2x fa fa-envelope"
+                        aria-hidden="true"></i></a>
+
+            </div>
+            <div class="comment footer-part-3">
+                <h2 style="padding: 0px 5px 0px;">Comment Box-</h2>
+                <form action="/">
+                    <div class="input-row">
+                        <div style="padding: 5px;">
+                            <label for="fname">First Name</label><br>
+                            <input class="input-style" type="text">
+                        </div>
+                        <div style="padding: 5px;">
+                            <label for="lname">Last Name</label><br>
+                            <input class="input-style" type="text">
+                        </div>
+                    </div>
+                    <div style="padding: 5px;">
+                        <label for="email">Email</label>
+                        <input class="input-style" type="email">
+
+                        <textarea name="comment" id="comment" cols="30" rows="4" placeholder="Your comments"></textarea>
+                    </div>
+                    <input class="button-green" type="submit">
+                </form>
+            </div>
+        </div>
+        <div class="foot">
+            <p>Copyright DigiTools | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.img-part-1').waypoint(function (direction) {
+                $('.img-part-1').addClass('animated fadeInLeft')
+            }, {
+                offset: "60%"
+            })
+        });
+
+        $(document).ready(function () {
+            $('.img-part-2').waypoint(function (direction) {
+                $('.img-part-2').addClass('animated fadeInRight')
+            }, {
+                offset: "60%"
+            })
+        });
+
+
+        $(document).ready(function () {
+            $('.cv-part-1').waypoint(function (direction) {
+                $('.cv-part-1').addClass('animated fadeInDown')
+            }, {
+                offset: "60%"
+            })
+        });
+
+        $(document).ready(function () {
+            $('.cv-part-2').waypoint(function (direction) {
+                $('.cv-part-2').addClass('animated fadeInUp')
+            }, {
+                offset: "60%"
+            })
+        });
+
+
+        $(document).ready(function () {
+            $('.nlp-part-1').waypoint(function (direction) {
+                $('.nlp-part-1').addClass('animated rotateInUpRight')
+            }, {
+                offset: "60%"
+            })
+        });
+
+        $(document).ready(function () {
+            $('.nlp-part-2').waypoint(function (direction) {
+                $('.nlp-part-2').addClass('animated rotateInUpLeft')
+            }, {
+                offset: "60%"
+            })
+        });
+
+
+        $(document).ready(function () {
+            $('.footer-part-1').waypoint(function (direction) {
+                $('.footer-part-1').addClass('animated fadeInLeft')
+            }, {
+                offset: "60%"
+            })
+        });
+
+
+        $(document).ready(function () {
+            $('.footer-part-2').waypoint(function (direction) {
+                $('.footer-part-2').addClass('animated fadeInDown')
+            }, {
+                offset: "60%"
+            })
+        });
+
+        $(document).ready(function () {
+            $('.footer-part-3').waypoint(function (direction) {
+                $('.footer-part-3').addClass('animated fadeInRight')
+            }, {
+                offset: "80%"
+            })
+        });
+
+        function onClickMenu() {
+            document.getElementById("menu").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+
+
+    </script>
+</body>
+
+</html>

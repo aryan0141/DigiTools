@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Hamburger Navbar */
+
+#menu{
+	width: 35px;
+	height: 30px;
+  margin: 30px 0 20px 20px;
+  visibility: hidden;
+	cursor: pointer;
+}
+.bar{
+	height: 5px;
+	width: 100%;
+	background-color: white;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+.nav li a{
+  color:black;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Quicksand', sans-serif;
+}
+.nav li a:hover{
+	font-weight: bold;
+}
+.nav li{
+	list-style: none;
+	padding: 16px 0;
+}
+.nav h1{
+  font-size: 2.5rem;
+  padding: 5px;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+.nav{
+	padding: 0;
+	margin: 0 20px;
+	transition: 0.3s ease;
+	display: none;
+}
+.menu-bg, #menu-bar{
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.menu-bg{
+	z-index: 1;
+	width: 0;
+	height: 0;
+	margin: 30px 0 20px 20px;
+	background: radial-gradient(circle,white,white);
+	border-radius: 50%;
+	transition: 0.3s ease;
+}
+#menu-bar{
+	z-index: 2;	
+}
+.change-bg{
+	width: 550px;
+	height: 540px;
+	transform: translate(-60%,-30%);
+}
+.change .bar{
+	background-color: black;
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
+}
+
+/* Main Navbar */
+
+
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(57, 245, 57, 1);
+    z-index: 1;
+}
+.nav-items{
+    /* display: flex; */
+    padding: 8px;
+}
+.logo{
+    padding: 5px 30px;
+}
+.logo h3{
+  margin: auto;
+}
+.links{
+    align-self: center;
+    justify-content: center;
+    margin: 5px;
+    display: flex;
+}
+.links a{
+    padding: 5px 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.links a:hover{
+    color: linen;
+    transition: 0.8s;
+
+}
+
+/* Sections */
+
+#home{
+    width: 100%;
+    padding: 129px 30px;
+    background-color:rgb(51, 241, 26);
+}
+.home-center{
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 60px;
+}
+.home-center h1{
+  font-size: 3.75rem;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+.home-center p{
+  font-size: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+  padding: 15px;
+}
+.home-center h3{
+  text-align: center;
+  padding: 10px;
+  /* color: red; */
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.india{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#india_flag{
+  border: 2px solid white;
+  height: 40px;
+  width: 50px;
+  border-radius: 18px;
+  padding: 0px 10px;
+}
+.chinese-items{
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+.chinese-items img{
+  margin: 15px;
+  height: 55px;
+  border: 2px solid white;
+  width: 55px;
+  border-radius: 100%;
+}
+#img-tools{
+    width: 100%;
+    background-color: white;
+}
+#cv-tools{
+    width: 100%;
+    background-color:  rgb(51, 241, 26);
+}
+#nlp-tools{
+    width: 100%;
+}
+
+/* Buttons */
+
+.button-white{
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: block;
+    margin: 15px auto 7px;
+    padding: 3px 5px;
+    color:  rgb(51, 241, 26);
+    border: 2px solid  rgb(51, 241, 26);
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+}
+.button-white:hover{
+    border-color: black;
+    color: black;
+    transition: 0.8s;
+}
+.button-green{
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: block;
+  margin: 15px auto 7px;
+  padding: 3px 5px;
+  color:  white;
+  border: 2px solid  white;
+  border-radius: 4px;
+  background: none;
+  cursor: pointer;
+}
+.button-green:hover{
+  border-color: black;
+  color: black;
+  transition: 0.8s;
+}
+
+/* Cards */
+
+.card-green{
+    border: 2px solid  white;
+    border-radius: 7px;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    color: white;
+}
+.card-white{
+  border: 2px solid  rgb(51, 241, 26);
+  border-radius: 7px;
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+  color: rgb(51, 241, 26);
+}
+
+
+
+
+/* Grids */
+
+.row{
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+}
+.input-row{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: auto;
+  padding: 20px 50px 60px;
+  width: 80%;
+}
+
+/* Footer */
+
+footer{
+    background-color: rgb(51, 241, 26);
+}
+.about{
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 10px 8px;
+  margin: 5px 5px;
+  color: white;
+}
+.comment{
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 5px 5px;
+  color: white;
+}
+.foot{
+  padding: 4px;
+  background-color: rgba(57, 245, 57, 0.911);
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+/* Miscellenous */
+
+.input-style{
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    padding: 4px 0px;
+    border-color: lightskyblue;
+}
+textarea{
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    margin: 28px 0px 5px;
+    border-color: lightskyblue;
+    text-align: center;
+    align-content: center;
+}
+h2{
+  line-height: 1.35;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+p{
+  font-size: 0.85rem;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.35;
+}
+
+.row p{
+  font-size: 1.1rem;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.35;
+}
+.text-center{
+  padding: 10px 10px 0px;
+  text-align: center;
+  color:black;
+  font-size: 2.75rem;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Animations */
+
+.img-part-1, .img-part-2,
+.cv-part-1, .cv-part-2,
+.nlp-part-1, .nlp-part-2,
+.footer-part-1, .footer-part-2, .footer-part-3{
+    opacity: 0;
+}
+.img-part-1 .animated, .img-part-2 .animated,
+.cv-part-1 .animated, .cv-part-2 .animated,
+.nlp-part-1 .animated, .nlp-part-2 .animated,
+.footer-part-1 .animated, .footer-part-2 .animated, .footer-part-3 .animated{
+    opacity: 1;
+}
+
+/* Media querries */
+
+@media screen and (max-width: 1299px){
+  .grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    padding: 20px 50px 60px;
+    width: 80%;
+  }
+  .input-row{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .text-center{
+    padding: 10px 10px 0px;
+    text-align: center;
+    color:black;
+    font-size: 2.25rem;
+    font-family: 'Baloo Bhai 2', cursive;
+  }
+  .row{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  #menu{
+    visibility: visible;
+  }
+  #navbar{
+    visibility: hidden;
+  }
+  .home-center h1{
+    font-size: 3.25rem;
+  }
+  .home-center h3{
+    font-size: 1.6rem;
+  }
+  .home-center p{
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+  .chinese-items img{
+    height: 45px;
+    width: 45px;
+  }
+}
+
+@media screen and (max-width: 740px){
+  .grid{
+    display: grid;
+    grid-template-columns: 100%;
+    margin: auto;
+    padding: 20px 50px 60px;
+    width: 80%;
+  }
+  .input-row{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .text-center{
+    padding: 10px 10px 0px;
+    text-align: center;
+    color:black;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+  }
+  .row{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 10px 30px 10px;
+  }
+  #menu{
+    visibility: visible;
+  }
+  #navbar{
+    visibility: hidden;
+  }
+  #home{
+    padding: 85px 10px;
+  }
+  .home-center h1{
+    font-size: 2.25rem;
+  }
+  .home-center h3{
+    font-size: 1.4rem;
+  }
+  .home-center p{
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  .chinese-items img{
+    height: 40px;
+    width: 40px;
+  }
+  .chinese-items{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  .india{
+    display: block;
+  }
+
+
+
+
+
+ 
+}
+
+
+/* End */
